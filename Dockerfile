@@ -21,7 +21,7 @@ RUN apt-get update && apt-get install -y \
 RUN R -e "install.packages(c('shiny', 'rmarkdown'), repos='https://cloud.r-project.org/')"
 
 # install dependencies of the omim app
-RUN R -e "install.packages(c('devtools', 'RSQLite', 'DBI', 'shinyjs', 'shinyBS', 'dplyr', 'DT'), repos='https://cloud.r-project.org/')"
+RUN R -e "install.packages(c('remotes', 'RSQLite', 'DBI', 'shinyjs', 'shinyBS', 'dplyr', 'DT'), repos='https://cloud.r-project.org/')"
 RUN R -e "devtools::install_github(c('rossellhayes/ipa', 'coolbutuseless/phon'))"
 
 # copy the app to the image
@@ -31,4 +31,4 @@ COPY Rprofile.site /usr/lib/R/etc/
 
 EXPOSE 3838
 
-CMD ["R", "-e", "shiny::runApp('/var/data/app')"]
+CMD ["R", "-e", "shiny::runApp('/var/data')"]
