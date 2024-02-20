@@ -22,7 +22,7 @@ RUN R -e "install.packages(c('shiny', 'rmarkdown'), repos='https://cloud.r-proje
 
 # install dependencies of the omim app
 RUN R -e "install.packages(c('remotes', 'RSQLite', 'DBI', 'shinyjs', 'shinyBS', 'dplyr', 'DT'), repos='https://cloud.r-project.org/')"
-RUN R -e "devtools::install_github(c('rossellhayes/ipa', 'coolbutuseless/phon'))"
+RUN R -e "remotes::install_github(c('rossellhayes/ipa', 'coolbutuseless/phon'))"
 
 # copy the app to the image
 WORKDIR /var/data
