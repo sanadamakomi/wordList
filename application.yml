@@ -37,6 +37,3 @@ proxy:
 logging:
   file:
     shinyproxy.log
-server:
-  servlet:
-    context-path:  /shiny/
