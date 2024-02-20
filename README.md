@@ -30,10 +30,10 @@ docker build -t word_list .
 #### Run Container
 
 ```
-docker run -p yourport:3838 word_list:latest
+docker run -p 8080:3838 word_list:latest
 ```
 
-It can be visited by `http://127.0.0.1/yourport`
+It can be visited by `http://127.0.0.1/8080`
 
 
 
@@ -81,4 +81,4 @@ systemctl status shinyproxy
 systemctl enable shinyproxy
 ```
 
-It can be visited by `http://127.0.0.1/yourport`
+It can be visited by `http://127.0.0.1/8080`
