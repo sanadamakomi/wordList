@@ -31,7 +31,7 @@ proxy:
   specs:
   - id: word
     display-name: Word List
-    container-cmd: ["R", "-e", "shiny::runApp('/var/data/app')"]
+    container-cmd: ["R", "-e", "shiny::runApp('/var/data')"]
     container-image: word_list
     access-groups: scientists
 logging:
