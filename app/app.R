@@ -301,9 +301,9 @@ server <- function(input, output, session) {
                 statement =
                     paste0("SELECT *
                 FROM word_table
-                WHERE (edit_time LIKE '%", input$in_remark, 
-                           "%') OR (remarks LIKE '%)", input$in_remark, 
-                           "%') OR (LOWER(en) LIKE '", input$in_initial, "%')"))
+                WHERE ((edit_time LIKE '%", input$in_remark, 
+                           "%') OR (remarks LIKE '%", input$in_remark, 
+                           "%')) AND (LOWER(en) LIKE '", input$in_initial, "%')"))
         }
     })
     
