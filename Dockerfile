@@ -26,7 +26,7 @@ RUN R -e "remotes::install_github(c('rossellhayes/ipa', 'coolbutuseless/phon'))"
 
 # copy the app to the image
 WORKDIR /var/data
-COPY app /var/data
+COPY app.R /var/data
 COPY Rprofile.site /usr/lib/R/etc/
 
 EXPOSE 3838
