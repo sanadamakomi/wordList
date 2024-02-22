@@ -31,6 +31,9 @@ docker build -t word_list .
 
 ```
 docker run -p 8080:3838 word_list:latest
+
+# use default data
+docker run -p 8080:3838 -v /your_sql_data:/var/data/data word_list:latest
 ```
 
 It can be visited by `http://127.0.0.1/8080`
