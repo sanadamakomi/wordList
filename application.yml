@@ -33,6 +33,7 @@ proxy:
     display-name: Word List
     container-cmd: ["R", "-e", "shiny::runApp('/var/data')"]
     container-image: word_list
+    container-volumes: ["/your_sql_data:/var/data/data"]
     access-groups: scientists
 logging:
   file:
