@@ -1,4 +1,6 @@
 # word_list
+example: http://www.makotofan.xyz/app/word
+
 This is a shiny app for recording, reviewing, and testing English vocabulary.
 
 We can search for a word and edit its information using the `Edit` button, as the core IELTS vocabulary is pre-imported into the `data.sqlite`. If the word is not found, press the `Add` button and edit the details.
