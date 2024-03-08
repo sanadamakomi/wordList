@@ -67,8 +67,8 @@ systemctl restart docker
 ##### 3. install shinyproxy
 
 ```
-wget https://www.shinyproxy.io/downloads/shinyproxy_3.0.1_x86_64.rpm
-rpm -i shinyproxy_3.0.1_x86_64.rpm
+wget https://www.shinyproxy.io/downloads/shinyproxy_2.5.0_x86_64.rpm
+rpm -i shinyproxy_2.5.0_x86_64.rpm
 ```
 
 ##### 4. copy application.yml，the template can be download from [github](https://github.com/openanalytics/shinyproxy-config-examples/blob/master/03-containerized-kubernetes/shinyproxy-example/application.yml).
