@@ -1,5 +1,5 @@
 # word_list
-example: http://47.115.214.101/app/word
+[Example](https://makotofan.xyz/app/word)
 
 This is a shiny app for recording, reviewing, and testing English vocabulary.
 
